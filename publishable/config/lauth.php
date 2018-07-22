@@ -13,8 +13,8 @@ return[
     'EMAIL_VIEW_FORGOT' => 'Lameck\Lauth::mail.forgot',
     'EMAIL_VIEW_NEWKEY' => 'Lameck\Lauth::user.new-key',
 
-    'CALLBACK_SIGNIN_SIGNUP_SUCCESS' => env('APP_URL'). ':8000',
-    'CALLBACK_SIGNIN_SIGNUP_ERROR' => env('APP_URL'). ':8000',
-    'CALLBACK_LOGOUT' => env('APP_URL'). ':8000',
+    'CALLBACK_SIGNIN_SIGNUP_SUCCESS' => env('APP_URL'). ':8000/login/account/login/account/signin',
+    'CALLBACK_SIGNIN_SIGNUP_ERROR' => env('APP_URL'). ':8000/login/account/login/account/signin/',
+    'CALLBACK_LOGOUT' => env('APP_URL'). ':8000/login/account/login/account/signin/',
 
 ];
