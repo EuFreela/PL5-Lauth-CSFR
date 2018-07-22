@@ -60,15 +60,6 @@ http://localhost:8000/login/account/signin
 <br>
 <b>php artisan rout:list</b>
 <br><br>
-<a href="http://localhost:8000/login/account/signin">Blog para exemplos</a><br>
+<a href="https://novos-cientistas.blogspot.com/2018/07/packager-laravel-lauth-11-modo-de-uso.html">Blog para exemplos</a><br>
 <a href="https://www.gnu.org/licenses/gpl.html">GNU General Public License v3.0</a>
-
-
-
-
-
-
-
-
-
 
