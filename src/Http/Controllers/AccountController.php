@@ -35,7 +35,7 @@ class AccountController extends Controller
     public function getLogout()
     {
         Auth::logout();
-        return redirect()->route('user.getsignin');
+        return Redirect::to(config('lauth.CALLBACK_LOGOUT'));
     }
     /**
     * POSTTERS

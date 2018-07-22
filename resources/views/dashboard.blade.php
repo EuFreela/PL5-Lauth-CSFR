@@ -5,7 +5,7 @@
 este é o dashboard
 <br/>
 
-<a href="{{URL::to(config('lauth.CALLBACK_LOGOUT'))}}">logout</a>
+<a href="{{route('user.getlogout')}}">logout</a>
 {{Auth::user()->name}}
 
 @endsection
