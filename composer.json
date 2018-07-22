@@ -8,7 +8,7 @@
         "lauth"
     ],
     "homepage": "https://github.com/EuFreela/PL5-SmartCart",
-    "license": "GPL-3.0-or-later",
+    "license": "MIT",
     "authors": [
         {
             "name": "Lameck Fernandes",
@@ -18,17 +18,12 @@
         }
     ],
     "minimum-stability": "stable",
+    "prefer-stable": true,
     "require": {
-        "php": "^7.0"
+        "php": "^7.0",
+        "laravel/framework": "^5.1"
     },
-    "extra": {        
-        "laravel": {
-            "routeMiddleware": {
-                "lauth" : "Lameck\\Lauth\\Http\\Middleware\\Authenticate"
-            },
-            "providers": [
-                "Lameck\\Lauth\\LauthServiceProvider"
-            ]
-        }
-    } 
+    "autoload": {
+        "psr-4": { "Lameck\\Lauth\\": "src/" }
+    }
 }
