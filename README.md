@@ -25,7 +25,7 @@ EXPORT:
 <HR/>
 CONFIGURAÇÃO
 ========
-Configuração de email: https://mailtrap.io.
+Configuração de email: https://mailtrap.io.<br>
 Migration Users: database/migrations/*users.php
 <pre>
 ***
@@ -39,13 +39,14 @@ $table->timestamps();
 ***
 </pre>
 
-MODEL USER: app/User.php
+MODEL USER: app/User.php<br>
 <pre>protected $fillable = ['confirm','name', 'email', 'password','remember_token'];</pre>
 
 <HR/>
 EXEMPLO DEFAULT
 ===============
-<B>php artisan migrate<br>php artisan serve</B>
+<br>
+<B>php artisan migrate<br>php artisan serve</B>br>
 http://localhost:8000/login/account/signin
 <br>
 <b>php artisan rout:list</b>
