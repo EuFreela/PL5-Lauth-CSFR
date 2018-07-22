@@ -1,0 +1,34 @@
+{
+    "name": "lameck/lauth",
+    "description": "Cadastro, recuperacao de credenciais e redefinicao de senha de usuarios no sistema",
+    "type": "library",
+    "keywords": [
+        "auth",
+        "laravel",
+        "lauth"
+    ],
+    "homepage": "https://github.com/EuFreela/PL5-SmartCart",
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Lameck Fernandes",
+            "email": "lameck.freelas@gmail.com",
+            "homepage": "https://github.com/EuFreela",
+            "role": "Developer FUll Stack"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^7.0"
+    },
+    "extra": {        
+        "laravel": {
+            "routeMiddleware": {
+                "lauth" : "Lameck\\Lauth\\Http\\Middleware\\Authenticate"
+            },
+            "providers": [
+                "Lameck\\Lauth\\LauthServiceProvider"
+            ]
+        }
+    } 
+}
