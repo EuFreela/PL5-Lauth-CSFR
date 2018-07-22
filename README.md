@@ -6,27 +6,33 @@ LAUTH, é um packager que tenho criado para aceleração de desenvolvimento de c
 <a href="https://packagist.org/packages/lameck/lauth">Assinatura</a>
 <b>composer require lameck/lauth</b>
 
-KERNEL: app/Http/kernel.php
+KERNEL: app/Http/kernel.php<br>
+=============================== 
+<br>
 <pre>
 lauth' => 'Lameck\Lauth\Http\Middleware\Authenticate',
 'lweb' => 'Lameck\Lauth\Http\Middleware\AuthRedirect',
 </pre>
-
-PROVIDER: config/app.php
+<br>
+PROVIDER: config/app.php<br>
+=============================
+<br>
 <pre>
 Lameck\Lauth\LauthServiceProvider::class, 
 </pre>
-
+<br>
 <b>composer dumpautoload</b>
+<br>
 
 EXPORT:
 <B>php artisan vendor:publish --provider="Lameck\Lauth\LauthServiceProvider" --force</B>
 
 <HR/>
 CONFIGURAÇÃO
-========
+============== 
+<br>
 Configuração de email: https://mailtrap.io.<br>
-Migration Users: database/migrations/*users.php
+Migration Users: database/migrations/*users.php<br>
 <pre>
 ***
 $table->increments('id');
@@ -38,12 +44,14 @@ $table->rememberToken();
 $table->timestamps();
 ***
 </pre>
-
+<br>
 MODEL USER: app/User.php<br>
+===========================
+<br>
 <pre>protected $fillable = ['confirm','name', 'email', 'password','remember_token'];</pre>
 
 <HR/>
-EXEMPLO DEFAULT
+EXEMPLO DEFAULT <br>
 ===============
 <br>
 <B>php artisan migrate<br>php artisan serve</B>br>
