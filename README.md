@@ -55,11 +55,40 @@ $table->timestamps();
 ### EXEMPLO DEFAULT <br>
 ### ===============
 <br>
-<B>php artisan migrate<br>php artisan serve</B>br>
+<B>php artisan migrate<br>php artisan serve</B><br>
 http://localhost:8000/login/account/signin
 <br>
 <b>php artisan rout:list</b>
-<br><br>
+<br>
+### ATRIBUTOS<br>
+### =========<br>
+<b>Página de Login:</b><br>
+<pre>
+name="email" - para o input email
+name="pwd" - para o input senha
+post: user.postsignin
+</pre><br>
+<b>Página de regitro:</b><br>
+<pre>
+name="nome" - input nome
+name="email" - input email
+name="senha" - input password
+name="repita_senha" - input repassword
+post: user.postsignup
+</pre><br>
+<b>Página de lembrar senha:</b><br>
+<pre>
+name="email" - input email
+pot: user.postforgot
+</pre><br>
+<b>Página de nova senha:</b><br>
+<pre>
+name="senha" - input password
+name="repita_senha" - input repassword
+post: user.postnewkey
+</pre><br>
+
+<br>
 <a href="https://novos-cientistas.blogspot.com/2018/07/packager-laravel-lauth-11-modo-de-uso.html">Blog para exemplos</a><br>
 <a href="https://www.gnu.org/licenses/gpl.html">GNU General Public License v3.0</a>
 
